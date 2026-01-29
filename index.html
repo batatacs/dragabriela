@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR" itemscope itemtype="http://schema.org/WebPage">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
     <!-- ==========================================
-       ÁREA DE MARKETING E RASTREAMENTO
-       (Substitua os IDs abaixo pelos seus reais quando criar as contas)
+        ÁREA DE MARKETING E RASTREAMENTO
+        (Substitua os IDs abaixo pelos seus reais quando criar as contas)
     ========================================== -->
-    
+
     <!-- Google Analytics 4 (Exemplo) -->
     <!-- 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
     </script> 
     -->
 
@@ -38,37 +39,43 @@
 
     <!-- SEO Técnico Principal -->
     <title>Dra. Gabriela Viotto Zanirato | Homeopatia e Clínica Geral</title>
-    <meta name="description" content="Dra. Gabriela Viotto Zanirato (CRM-SP 200.361): Médica especialista em Medicina Integrativa, Homeopatia e Clínica Geral no CEDISAR, Santa Rita do Passa Quatro. Atendimento particular personalizado.">
-    <meta name="keywords" content="homeopatia santa rita do passa quatro, medicina integrativa, médica cedisar, tratamento natural ansiedade, dra gabriela viotto zanirato, atendimento particular">
+    <meta name="description"
+        content="Dra. Gabriela Viotto Zanirato (CRM-SP 200.361): Médica especialista em Medicina Integrativa, Homeopatia e Clínica Geral no CEDISAR, Santa Rita do Passa Quatro. Atendimento particular personalizado.">
+    <meta name="keywords"
+        content="homeopatia santa rita do passa quatro, medicina integrativa, médica cedisar, tratamento natural ansiedade, dra gabriela viotto zanirato, atendimento particular">
     <meta name="author" content="Dra. Gabriela Viotto Zanirato">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.dragabriela.med.br">
-    
+
     <!-- Imersão Mobile (Cor da barra do navegador - Rosa Marsala) -->
     <meta name="theme-color" content="#9E726F">
     <meta name="apple-mobile-web-app-status-bar-style" content="#9E726F">
 
     <!-- Favicon Dinâmico (SVG) - Atualizado para Rosa -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 stroke=%22%23D4AF37%22 stroke-width=%224%22 fill=%22%239E726F%22/><text y=%2265%22 x=%2250%22 font-family=%22serif%22 font-size=%2240%22 fill=%22%23D4AF37%22 text-anchor=%22middle%22>GZ</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 stroke=%22%23D4AF37%22 stroke-width=%224%22 fill=%22%239E726F%22/><text y=%2265%22 x=%2250%22 font-family=%22serif%22 font-size=%2240%22 fill=%22%23D4AF37%22 text-anchor=%22middle%22>GZ</text></svg>">
 
     <!-- Open Graph / Facebook & WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Dra. Gabriela Viotto Zanirato | Medicina Integrativa">
     <meta property="og:description" content="Cuidado humanizado e Homeopatia no CEDISAR. Agende sua consulta.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1200&auto=format&fit=crop">
 
     <!-- React & ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js" defer></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" defer></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js" defer></script>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts - ALTERADO PARA LATO (Melhor Leitura) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&family=Pinyon+Script&display=swap"
+        rel="stylesheet">
 
     <!-- Configuração Tailwind -->
     <script>
@@ -118,11 +125,13 @@
     </script>
 
     <style>
-        html { 
-            scroll-behavior: smooth; 
-            scroll-padding-top: 120px; 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 120px;
+            overflow-x: hidden;
+            /* Segurança extra para mobile */
         }
-        
+
         .hero-bg {
             /* Fallback image if video fails */
             background-image: linear-gradient(rgba(158, 114, 111, 0.5), rgba(74, 59, 59, 0.6)), url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2000&auto=format&fit=crop');
@@ -132,62 +141,138 @@
             will-change: transform;
         }
 
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes slideInLeft { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: translateX(0); } }
-        @keyframes ripple {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .whatsapp-pulse { animation: ripple 2s infinite; }
-        .animate-fade-in { animation: fadeIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-        .animate-slide-in { animation: slideInLeft 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-        
-        .hover-underline { display: inline-block; position: relative; }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes ripple {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .whatsapp-pulse {
+            animation: ripple 2s infinite;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .animate-slide-in {
+            animation: slideInLeft 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .hover-underline {
+            display: inline-block;
+            position: relative;
+        }
+
         .hover-underline::after {
-            content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 1px;
-            bottom: 0; left: 0; background-color: currentColor; transform-origin: bottom right;
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transform-origin: bottom right;
             transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
         }
-        .hover-underline:hover::after { transform: scaleX(1); transform-origin: bottom left; }
-        
-        .map-filter { filter: grayscale(100%) invert(0%) contrast(100%); transition: filter 0.3s; }
-        .map-filter:hover { filter: grayscale(0%); }
 
-        .reveal-section { opacity: 0; transform: translateY(30px); transition: all 1s ease-out; }
-        .reveal-section.visible { opacity: 1; transform: translateY(0); }
+        .hover-underline:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .map-filter {
+            filter: grayscale(100%) invert(0%) contrast(100%);
+            transition: filter 0.3s;
+        }
+
+        .map-filter:hover {
+            filter: grayscale(0%);
+        }
+
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease-out;
+        }
+
+        .reveal-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
         /* Estilo para esconder a barra de rolagem no carrossel de depoimentos */
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
 
         /* Estilo para preservação de perspectiva 3D */
-        .preserve-3d { transform-style: preserve-3d; }
+        .preserve-3d {
+            transform-style: preserve-3d;
+        }
     </style>
 
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Physician",
-        "name": "Dra. Gabriela Viotto Zanirato",
-        "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=2000",
-        "description": "Médica especialista em Medicina Integrativa e Homeopatia.",
-        "address": {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dra. Gabriela Viotto Zanirato",
+      "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=2000",
+      "description": "Médica especialista em Medicina Integrativa e Homeopatia.",
+      "address": {
         "@type": "PostalAddress",
         "streetAddress": "Rua Ignácio Ribeiro, 580 - CEDISAR",
         "addressLocality": "Santa Rita do Passa Quatro",
         "addressRegion": "SP",
         "postalCode": "13670-000",
         "addressCountry": "BR"
-        },
-        "telephone": "+551935822923",
-        "openingHours": "Mo-Fr 08:00-18:00",
-        "priceRange": "$$"
+      },
+      "telephone": "+551935822923",
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "priceRange": "$$"
     }
     </script>
 </head>
-<body class="bg-light text-dark font-sans antialiased selection:bg-accent selection:text-white">
+
+<body class="bg-light text-dark font-sans antialiased selection:bg-accent selection:text-white overflow-x-hidden">
     <div id="root"></div>
 
     <script type="text/babel">
@@ -195,32 +280,32 @@
 
         // Ícones SVG
         const Icons = {
-            Menu: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>,
-            X: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 18 18"/></svg>,
-            Phone: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>,
-            Mail: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>,
-            MapPin: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>,
-            Instagram: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>,
-            Facebook: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>,
-            Clock: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
-            Stethoscope: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,
-            Leaf: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>,
-            Heart: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>,
-            ArrowRight: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>,
-            ArrowUp: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6"/></svg>,
-            MessageCircle: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>,
-            ChevronDown: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>,
-            Plus: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>,
-            Minus: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/></svg>,
-            Star: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>,
-            Code: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>,
-            Check: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>,
-            Wheelchair: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="M14.83 9.17l-4.24 4.24"/><path d="M9.17 14.83l4.24-4.24"/><circle cx="12" cy="5" r="1"/><path d="m17 17-3 3"/><path d="m19 14 3-3"/></svg>, // Simulando ícone de acessibilidade/conforto
-            Wifi: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>,
-            Snowflake: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></svg>,
+            Menu: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="6" x2="20" y2="6" /><line x1="4" y1="18" x2="20" y2="18" /></svg>,
+            X: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18" /><path d="m6 6 18 18" /></svg>,
+            Phone: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>,
+            Mail: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>,
+            MapPin: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>,
+            Instagram: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>,
+            Facebook: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>,
+            Clock: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>,
+            Stethoscope: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" /><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4" /><circle cx="20" cy="10" r="2" /></svg>,
+            Leaf: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></svg>,
+            Heart: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg>,
+            ArrowRight: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>,
+            ArrowUp: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6" /></svg>,
+            MessageCircle: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>,
+            ChevronDown: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>,
+            Plus: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>,
+            Minus: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>,
+            Star: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>,
+            Code: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>,
+            Check: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>,
+            Wheelchair: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="M14.83 9.17l-4.24 4.24" /><path d="M9.17 14.83l4.24-4.24" /><circle cx="12" cy="5" r="1" /><path d="m17 17-3 3" /><path d="m19 14 3-3" /></svg>,
+            Wifi: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0" /><path d="M1.42 9a16 16 0 0 1 21.16 0" /><path d="M8.53 16.11a6 6 0 0 1 6.95 0" /><line x1="12" y1="20" x2="12.01" y2="20" /></svg>,
+            Snowflake: (props) => <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="2" y1="12" x2="22" y2="12" /><line x1="12" y1="2" x2="12" y2="22" /><path d="m20 16-4-4 4-4" /><path d="m4 8 4 4-4 4" /><path d="m16 4-4 4-4-4" /><path d="m8 20 4-4 4 4" /></svg>,
             WhatsApp: (props) => (
                 <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                 </svg>
             )
         };
@@ -297,10 +382,10 @@
                 const { left, top, width, height } = ref.current.getBoundingClientRect();
                 const x = (e.clientX - left) / width - 0.5;
                 const y = (e.clientY - top) / height - 0.5;
-                
-                const rotateX = y * -8; 
+
+                const rotateX = y * -8;
                 const rotateY = x * 8;
-                
+
                 setTransform(`perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`);
             };
 
@@ -309,7 +394,7 @@
             };
 
             return (
-                <div 
+                <div
                     ref={ref}
                     onMouseMove={handleMouseMove}
                     onMouseLeave={handleMouseLeave}
@@ -346,10 +431,10 @@
         const Logo = ({ scrolled }) => (
             <div className="flex items-center gap-2">
                 <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform hover:scale-105 duration-500">
-                    <circle cx="50" cy="50" r="48" stroke={scrolled ? '#D4AF37' : '#FFFFFF'} strokeWidth="2" className="opacity-50"/>
-                    <path d="M65 35 C 60 25 40 25 30 40 C 25 55 35 70 50 70 H 60 V 55" stroke={scrolled ? '#9E726F' : '#FFFFFF'} strokeWidth="3" strokeLinecap="round" fill="none"/>
-                    <path d="M45 45 H 70 L 45 65 H 70" stroke={scrolled ? '#D4AF37' : '#FFFFFF'} strokeWidth="3" strokeLinecap="round" fill="none"/>
-                    <path d="M70 25 C 75 20 85 20 85 30 C 85 40 70 45 70 45" stroke={scrolled ? '#D4AF37' : '#FFFFFF'} strokeWidth="2" fill="none" strokeLinecap="round"/>
+                    <circle cx="50" cy="50" r="48" stroke={scrolled ? '#D4AF37' : '#FFFFFF'} strokeWidth="2" className="opacity-50" />
+                    <path d="M65 35 C 60 25 40 25 30 40 C 25 55 35 70 50 70 H 60 V 55" stroke={scrolled ? '#9E726F' : '#FFFFFF'} strokeWidth="3" strokeLinecap="round" fill="none" />
+                    <path d="M45 45 H 70 L 45 65 H 70" stroke={scrolled ? '#D4AF37' : '#FFFFFF'} strokeWidth="3" strokeLinecap="round" fill="none" />
+                    <path d="M70 25 C 75 20 85 20 85 30 C 85 40 70 45 70 45" stroke={scrolled ? '#D4AF37' : '#FFFFFF'} strokeWidth="2" fill="none" strokeLinecap="round" />
                 </svg>
                 <div className="flex flex-col">
                     <span className={`text-xl font-serif tracking-[0.2em] uppercase leading-none ${scrolled ? 'text-primary' : 'text-white'}`}>
@@ -362,17 +447,17 @@
             </div>
         );
 
-        // Preloader - Com Vídeo de Fundo
+        // Preloader - Com Vídeo de Fundo Restaurado
         const Preloader = () => {
             return (
                 <div className="fixed inset-0 z-[100] bg-primary flex items-center justify-center animate-fadeOut overflow-hidden" style={{ animationDelay: '2.5s' }}>
                     {/* Vídeo Background */}
                     <div className="absolute inset-0 z-0">
-                        <video 
-                            autoPlay 
-                            loop 
-                            muted 
-                            playsInline 
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
                             className="w-full h-full object-cover opacity-60"
                         >
                             <source src="https://videos.pexels.com/video-files/855610/855610-hd_1920_1080_25fps.mp4" type="video/mp4" />
@@ -383,9 +468,9 @@
 
                     <div className="relative z-10 flex flex-col items-center">
                         <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="animate-pulse-slow mb-4">
-                            <circle cx="50" cy="50" r="48" stroke="#D4AF37" strokeWidth="2" className="opacity-50"/>
-                            <path d="M65 35 C 60 25 40 25 30 40 C 25 55 35 70 50 70 H 60 V 55" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" fill="none"/>
-                            <path d="M45 45 H 70 L 45 65 H 70" stroke="#D4AF37" strokeWidth="3" strokeLinecap="round" fill="none"/>
+                            <circle cx="50" cy="50" r="48" stroke="#D4AF37" strokeWidth="2" className="opacity-50" />
+                            <path d="M65 35 C 60 25 40 25 30 40 C 25 55 35 70 50 70 H 60 V 55" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" fill="none" />
+                            <path d="M45 45 H 70 L 45 65 H 70" stroke="#D4AF37" strokeWidth="3" strokeLinecap="round" fill="none" />
                         </svg>
                         <div className="text-white font-serif tracking-[0.3em] text-sm animate-pulse">CARREGANDO</div>
                     </div>
@@ -441,7 +526,7 @@
             };
 
             return (
-                <button 
+                <button
                     onClick={scrollToTop}
                     className={`fixed bottom-8 left-8 z-40 bg-white/80 backdrop-blur border border-primary/10 text-primary p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-primary hover:text-white ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                     aria-label="Voltar ao topo"
@@ -477,11 +562,28 @@
         const Navbar = () => {
             const [isOpen, setIsOpen] = useState(false);
             const [scrolled, setScrolled] = useState(false);
+
+            // NOVO: TRAVAMENTO DE ROLAGEM QUANDO O MENU ESTÁ ABERTO (Reforçado)
+            useEffect(() => {
+                if (isOpen) {
+                    document.body.style.overflow = 'hidden';
+                    document.documentElement.style.overflow = 'hidden'; // Reforço para mobile
+                } else {
+                    document.body.style.overflow = '';
+                    document.documentElement.style.overflow = '';
+                }
+                return () => {
+                    document.body.style.overflow = '';
+                    document.documentElement.style.overflow = '';
+                };
+            }, [isOpen]);
+
             useEffect(() => {
                 const handleScroll = () => setScrolled(window.scrollY > 30);
                 window.addEventListener('scroll', handleScroll);
                 return () => window.removeEventListener('scroll', handleScroll);
             }, []);
+
             const navLinks = [
                 { name: 'Início', href: '#home' },
                 { name: 'A Médica', href: '#sobre' },
@@ -494,18 +596,18 @@
                     <div className={`bg-primary text-white/80 transition-all duration-500 ease-in-out overflow-hidden flex justify-center items-center text-[10px] md:text-xs tracking-widest border-b border-white/10 ${scrolled ? 'h-0 opacity-0' : 'h-10 opacity-100'}`}>
                         <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center w-full">
                             <div className="hidden md:flex space-x-8">
-                                <span className="flex items-center gap-2 hover:text-accent transition-colors cursor-default"><Icons.MapPin size={12} className="text-accent"/> Santa Rita do Passa Quatro - SP</span>
-                                <span className="flex items-center gap-2 hover:text-accent transition-colors cursor-default"><Icons.Phone size={12} className="text-accent"/> (19) 3582-2923</span>
+                                <span className="flex items-center gap-2 hover:text-accent transition-colors cursor-default"><Icons.MapPin size={12} className="text-accent" /> Santa Rita do Passa Quatro - SP</span>
+                                <span className="flex items-center gap-2 hover:text-accent transition-colors cursor-default"><Icons.Phone size={12} className="text-accent" /> (19) 3582-2923</span>
                             </div>
                             <div className="flex space-x-6 md:ml-auto w-full md:w-auto justify-center md:justify-end">
-                                <a href="#" className="hover:text-accent transition-colors flex items-center gap-2"><Icons.Instagram size={14}/></a>
+                                <a href="#" className="hover:text-accent transition-colors flex items-center gap-2"><Icons.Instagram size={14} /></a>
                                 <div className="w-[1px] h-3 bg-white/20 hidden md:block"></div>
-                                <a href="#" className="hover:text-accent transition-colors flex items-center gap-2"><Icons.Facebook size={14}/></a>
+                                <a href="#" className="hover:text-accent transition-colors flex items-center gap-2"><Icons.Facebook size={14} /></a>
                             </div>
                         </div>
                     </div>
-                    <nav className={`transition-all duration-700 w-full ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-gray-100 py-3 shadow-sm' : 'bg-transparent border-b border-white/10 py-5'}`}>
-                        <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+                    <nav className={`transition-all duration-700 w-full ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-gray-100 py-3 shadow-sm' : 'bg-transparent border-b border-white/10 py-5'} z-50`}>
+                        <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center relative">
                             <a href="#" className="z-50 relative group"><Logo scrolled={scrolled} /></a>
                             <div className="hidden md:flex space-x-10 items-center">
                                 {navLinks.map((link) => (
@@ -513,18 +615,35 @@
                                 ))}
                                 <a href="#contato" className={`px-6 py-2.5 text-sm uppercase tracking-widest transition-all border ${scrolled ? 'border-primary text-primary hover:bg-primary hover:text-white' : 'border-white text-white hover:bg-white hover:text-primary'}`}>Agendar</a>
                             </div>
-                            <div className="md:hidden z-50">
-                                <button onClick={() => setIsOpen(!isOpen)} aria-label="Menu" className={`transition-colors ${scrolled || isOpen ? 'text-primary' : 'text-white'}`}>{isOpen ? <Icons.X size={28} /> : <Icons.Menu size={28} />}</button>
+                            <div className="md:hidden z-50 relative flex items-center">
+                                <button
+                                    onClick={() => setIsOpen(!isOpen)}
+                                    aria-label={isOpen ? "Fechar Menu" : "Abrir Menu"}
+                                    className={`transition-colors relative z-50 p-2 -mr-2 ${scrolled || isOpen ? 'text-primary' : 'text-white'}`}
+                                >
+                                    {isOpen ? <Icons.X size={32} /> : <Icons.Menu size={32} />}
+                                </button>
                             </div>
                         </div>
                     </nav>
-                    <div className={`fixed inset-0 z-40 flex flex-col justify-center items-center space-y-8 transition-transform duration-500 ease-in-out bg-white/95 backdrop-blur-xl ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                            {navLinks.map((link) => (
+
+                    {/* MENU OVERLAY - CORRIGIDO ONDE O BOTÃO DE FECHAR FICARÁ DENTRO DO OVERLAY */}
+                    <div className={`fixed inset-0 z-[60] flex flex-col justify-center items-center space-y-8 transition-transform duration-500 ease-in-out bg-white/95 backdrop-blur-xl ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                        {/* BOTÃO X DENTRO DO MENU PARA GARANTIR VISIBILIDADE */}
+                        <button
+                            onClick={() => setIsOpen(false)}
+                            className="absolute top-6 right-6 p-2 text-primary hover:text-accent transition-colors"
+                            aria-label="Fechar Menu"
+                        >
+                            <Icons.X size={32} />
+                        </button>
+
+                        {navLinks.map((link) => (
                             <a key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="text-primary text-2xl font-serif hover:text-accent italic transition-colors">{link.name}</a>
                         ))}
                         <div className="flex space-x-6 mt-8">
-                            <a href="#" className="text-primary hover:text-accent"><Icons.Instagram size={24}/></a>
-                            <a href="#" className="text-primary hover:text-accent"><Icons.Facebook size={24}/></a>
+                            <a href="#" className="text-primary hover:text-accent"><Icons.Instagram size={24} /></a>
+                            <a href="#" className="text-primary hover:text-accent"><Icons.Facebook size={24} /></a>
                         </div>
                     </div>
                 </header>
@@ -533,14 +652,14 @@
 
         const Hero = () => {
             return (
-                <section id="home" className="relative h-screen flex items-center overflow-hidden">
+                <section id="home" className="relative h-screen flex items-center overflow-hidden bg-primary"> {/* Fundo sólido de backup */}
                     <div className="absolute inset-0 z-0">
                         {/* VÍDEO RESTAURADO: Natureza Wellness */}
-                        <video 
-                            autoPlay 
-                            loop 
-                            muted 
-                            playsInline 
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
                             className="w-full h-full object-cover"
                             poster="https://images.unsplash.com/photo-1507646227500-4d389b0012be?q=80&w=2000&auto=format&fit=crop"
                         >
@@ -550,12 +669,12 @@
                         <div className="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-black/60"></div>
                     </div>
-                    
+
                     <div className="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col justify-center h-full pt-20">
                         <div className="max-w-4xl animate-slide-in border-l-2 border-accent pl-8 md:pl-12 py-4">
                             <p className="text-sm md:text-base uppercase tracking-[0.4em] mb-6 text-white/90 font-normal shadow-black drop-shadow-md">Medicina Integrativa • Homeopatia</p>
                             <h1 className="text-6xl md:text-8xl font-serif text-white mb-8 leading-[1.1] font-thin drop-shadow-lg">
-                                A ciência de curar, <br/>
+                                A ciência de curar, <br />
                                 <span className="italic font-light text-white/90">a arte de cuidar.</span>
                             </h1>
                             <p className="max-w-xl text-lg md:text-2xl text-white/95 font-normal leading-relaxed mb-10 drop-shadow-md">
@@ -581,7 +700,7 @@
                             <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                                 <div className="lg:w-1/2 relative group">
                                     <div className="absolute inset-0 bg-primary transform translate-x-4 translate-y-4 transition-transform duration-700 group-hover:translate-x-6 group-hover:translate-y-6"></div>
-                                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=2000&auto=format&fit=crop" alt="Dra. Gabriela Viotto Zanirato" className="w-full relative z-10 grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out object-cover aspect-[4/5]" loading="lazy"/>
+                                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=2000&auto=format&fit=crop" alt="Dra. Gabriela Viotto Zanirato" className="w-full relative z-10 grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out object-cover aspect-[4/5]" loading="lazy" />
                                     <div className="absolute bottom-8 -left-8 bg-white p-6 shadow-xl z-20 max-w-xs hidden md:block">
                                         <p className="font-serif text-2xl text-primary italic">"Saúde não é apenas a ausência de doença, é a harmonia do ser."</p>
                                     </div>
@@ -594,7 +713,7 @@
                                     <div className="space-y-6 text-gray-700 font-normal leading-relaxed text-lg md:text-xl">
                                         <p>Com uma trajetória consolidada em mais de 15 anos de prática clínica, a Dra. Gabriela representa a convergência entre a medicina alopática tradicional e a visão sistêmica da homeopatia.</p>
                                         <p>Sua filosofia de atendimento é pautada na escuta ativa e no tempo. Cada consulta é uma investigação minuciosa não apenas dos sintomas físicos, mas do estilo de vida, emoções e histórico do paciente.</p>
-                                        
+
                                         {/* ASSINATURA MANUSCRITA */}
                                         <div className="pt-4">
                                             <p className="font-script text-4xl text-primary transform -rotate-2">Com carinho, Dra. Gabriela</p>
@@ -616,8 +735,8 @@
                                         </div>
                                     </div>
                                     <div className="flex flex-col space-y-2 text-sm text-gray-700 font-medium tracking-wide">
-                                        <p>CRM-SP 200.361 (Clínica Geral) e</p>
-                                        <p>Homeopata</p>
+                                        <p>CRM-SP 200.361 (Clínica Médica)</p>
+                                        <p>Homeopatia</p>
                                     </div>
                                 </div>
                             </div>
@@ -662,7 +781,7 @@
                 </section>
             );
         };
-        
+
         // --- NOVA SEÇÃO DE CONDIÇÕES TRATADAS COM CARDS INTERATIVOS ---
         const Conditions = () => {
             const [selected, setSelected] = useState(null);
@@ -712,7 +831,7 @@
 
             return (
                 <section className="py-24 bg-white border-t border-gray-100">
-                     <div className="container mx-auto px-6 lg:px-12">
+                    <div className="container mx-auto px-6 lg:px-12">
                         <Reveal>
                             <div className="text-center mb-16">
                                 <span className="text-accent uppercase tracking-[0.2em] text-sm font-bold">Sintomas & Tratamentos</span>
@@ -721,10 +840,10 @@
                             </div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {conditionsData.map((item, idx) => (
-                                    <TiltCard 
-                                        key={idx} 
+                                    <TiltCard
+                                        key={idx}
                                     >
-                                        <button 
+                                        <button
                                             onClick={() => setSelected(item)}
                                             className="group w-full h-full flex flex-col items-center p-8 bg-surface rounded-lg hover:shadow-xl transition-all duration-300 border border-transparent hover:border-accent/30"
                                         >
@@ -736,10 +855,10 @@
                                 ))}
                             </div>
                         </Reveal>
-                     </div>
+                    </div>
 
-                     {/* Modal de Condições */}
-                     {selected && (
+                    {/* Modal de Condições */}
+                    {selected && (
                         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-dark/70 backdrop-blur-sm animate-fade-in" onClick={() => setSelected(null)}>
                             <div className="bg-white max-w-lg w-full rounded-lg shadow-2xl relative overflow-hidden" onClick={e => e.stopPropagation()}>
                                 <div className="absolute top-0 left-0 w-full h-2 bg-accent"></div>
@@ -747,7 +866,7 @@
                                 <div className="p-10">
                                     <div className="text-accent mb-4"><Icons.Check size={40} /></div>
                                     <h3 className="text-3xl font-serif text-primary mb-4">{selected.title}</h3>
-                                    
+
                                     <div className="space-y-6">
                                         <div>
                                             <h4 className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-2">O que é</h4>
@@ -767,11 +886,11 @@
                                 </div>
                             </div>
                         </div>
-                     )}
+                    )}
                 </section>
             );
         };
-        
+
         // --- NOVA SEÇÃO: JORNADA DO PACIENTE ---
         const TreatmentJourney = () => {
             const steps = [
@@ -792,7 +911,7 @@
                             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
                                 {/* Linha de conexão (Desktop) */}
                                 <div className="hidden md:block absolute top-6 left-0 w-full h-[2px] border-t-2 border-dotted border-accent/30 -z-0"></div>
-                                
+
                                 {steps.map((step, idx) => (
                                     <div key={idx} className="relative z-10 flex flex-col items-center text-center">
                                         <div className="w-12 h-12 rounded-full bg-white border-2 border-accent flex items-center justify-center text-primary font-serif text-xl shadow-md mb-6">
@@ -817,7 +936,7 @@
                             <div className="md:w-1/2 pr-0 md:pr-20 mb-16 md:mb-0">
                                 <Reveal>
                                     <span className="text-accent uppercase tracking-[0.2em] text-sm font-bold">Filosofia Clínica</span>
-                                    <h2 className="text-4xl md:text-6xl font-serif text-primary mt-4 mb-10 leading-tight">O corpo fala. <br/><span className="italic text-gray-400">Nós escutamos.</span></h2>
+                                    <h2 className="text-4xl md:text-6xl font-serif text-primary mt-4 mb-10 leading-tight">O corpo fala. <br /><span className="italic text-gray-400">Nós escutamos.</span></h2>
                                     <div className="space-y-10">
                                         <div className="flex group"><span className="text-accent font-serif text-4xl mr-6 opacity-50 group-hover:opacity-100 transition-opacity">01.</span><div><h4 className="text-xl font-serif text-primary font-medium mb-2">Unicidade</h4><p className="text-gray-600 font-normal text-base leading-relaxed">Não existem dois pacientes iguais. Seu tratamento é desenhado exclusivamente para sua constituição biológica e emocional.</p></div></div>
                                         <div className="flex group"><span className="text-accent font-serif text-4xl mr-6 opacity-50 group-hover:opacity-100 transition-opacity">02.</span><div><h4 className="text-xl font-serif text-primary font-medium mb-2">Minima Intervenção</h4><p className="text-gray-600 font-normal text-base leading-relaxed">Buscamos a menor dose necessária para restaurar o equilíbrio, respeitando a fisiologia natural do corpo.</p></div></div>
@@ -828,7 +947,7 @@
                             <div className="md:w-1/2 relative group">
                                 <Reveal delay={300}>
                                     <div className="absolute top-10 -right-10 w-full h-full border border-primary/20 z-0 hidden md:block"></div>
-                                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop" alt="Cuidado Humanizado e Natural" className="relative z-10 shadow-2xl w-full aspect-square object-cover filter brightness-105 hover:brightness-100 transition-all duration-1000" loading="lazy"/>
+                                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop" alt="Cuidado Humanizado e Natural" className="relative z-10 shadow-2xl w-full aspect-square object-cover filter brightness-105 hover:brightness-100 transition-all duration-1000" loading="lazy" />
                                     <div className="absolute -bottom-6 -left-6 z-20 bg-accent text-white p-6 shadow-lg max-w-[200px]">
                                         <p className="font-serif italic text-lg leading-tight">"A natureza é a médica das doenças."</p>
                                         <p className="text-sm mt-2 uppercase tracking-widest opacity-80">— Hipócrates</p>
@@ -927,13 +1046,13 @@
                                     Um centro de diagnóstico avançado, unindo tecnologia de ponta ao conforto que seu atendimento médico exige.
                                 </p>
                             </div>
-                            
+
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[500px]">
                                 <div className="md:col-span-2 relative group overflow-hidden rounded-sm h-full">
                                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors z-10"></div>
-                                    <img 
-                                        src="https://static.wixstatic.com/media/67a02a_4da4f1c057a246d5911d7f7ac91492d1~mv2.jpeg/v1/crop/x_0,y_77,w_1280,h_655/fill/w_980,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/67a02a_4da4f1c057a246d5911d7f7ac91492d1~mv2.jpeg" 
-                                        alt="Fachada CEDISAR" 
+                                    <img
+                                        src="https://static.wixstatic.com/media/67a02a_4da4f1c057a246d5911d7f7ac91492d1~mv2.jpeg/v1/crop/x_0,y_77,w_1280,h_655/fill/w_980,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/67a02a_4da4f1c057a246d5911d7f7ac91492d1~mv2.jpeg"
+                                        alt="Fachada CEDISAR"
                                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                                         loading="lazy"
                                     />
@@ -943,9 +1062,9 @@
                                     <div className="relative group overflow-hidden rounded-sm h-1/2">
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors z-10"></div>
                                         {/* FOTO DA TOMOGRAFIA REAL */}
-                                        <img 
-                                            src="https://static.wixstatic.com/media/67a02a_b9c0382184b340ce85715826a50477df~mv2.jpg/v1/fill/w_1730,h_465,al_c,q_85,enc_avif,quality_auto/67a02a_b9c0382184b340ce85715826a50477df~mv2.jpg" 
-                                            alt="Sala de Tomografia" 
+                                        <img
+                                            src="https://static.wixstatic.com/media/67a02a_b9c0382184b340ce85715826a50477df~mv2.jpg/v1/fill/w_1730,h_465,al_c,q_85,enc_avif,quality_auto/67a02a_b9c0382184b340ce85715826a50477df~mv2.jpg"
+                                            alt="Sala de Tomografia"
                                             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                                             loading="lazy"
                                         />
@@ -954,9 +1073,9 @@
                                     <div className="relative group overflow-hidden rounded-sm h-1/2">
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors z-10"></div>
                                         {/* FOTO DO ULTRASSOM REAL */}
-                                        <img 
-                                            src="https://static.wixstatic.com/media/67a02a_039caed244174c288fb43275e8d7f605~mv2.jpg/v1/fill/w_1730,h_465,al_c,q_85,enc_avif,quality_auto/67a02a_039caed244174c288fb43275e8d7f605~mv2.jpg" 
-                                            alt="Sala de Ultrassonografia" 
+                                        <img
+                                            src="https://static.wixstatic.com/media/67a02a_039caed244174c288fb43275e8d7f605~mv2.jpg/v1/fill/w_1730,h_465,al_c,q_85,enc_avif,quality_auto/67a02a_039caed244174c288fb43275e8d7f605~mv2.jpg"
+                                            alt="Sala de Ultrassonografia"
                                             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                                             loading="lazy"
                                         />
@@ -964,23 +1083,23 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             {/* Ícones de Facilidades */}
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 text-center">
                                 <div className="flex flex-col items-center gap-2">
-                                    <div className="text-primary"><Icons.Wheelchair size={24}/></div>
+                                    <div className="text-primary"><Icons.Wheelchair size={24} /></div>
                                     <span className="text-xs uppercase tracking-widest text-gray-500">Acessibilidade Total</span>
                                 </div>
                                 <div className="flex flex-col items-center gap-2">
-                                    <div className="text-primary"><Icons.Wifi size={24}/></div>
+                                    <div className="text-primary"><Icons.Wifi size={24} /></div>
                                     <span className="text-xs uppercase tracking-widest text-gray-500">Wi-Fi Gratuito</span>
                                 </div>
                                 <div className="flex flex-col items-center gap-2">
-                                    <div className="text-primary"><Icons.Snowflake size={24}/></div>
+                                    <div className="text-primary"><Icons.Snowflake size={24} /></div>
                                     <span className="text-xs uppercase tracking-widest text-gray-500">Ambiente Climatizado</span>
                                 </div>
                                 <div className="flex flex-col items-center gap-2">
-                                    <div className="text-primary"><Icons.Check size={24}/></div>
+                                    <div className="text-primary"><Icons.Check size={24} /></div>
                                     <span className="text-xs uppercase tracking-widest text-gray-500">Estacionamento Próximo</span>
                                 </div>
                             </div>
@@ -992,9 +1111,9 @@
         };
 
         const Contact = () => {
-            const [formData, setFormData] = useState({ 
-                name: '', 
-                message: '', 
+            const [formData, setFormData] = useState({
+                name: '',
+                message: '',
                 phone: '',
                 subject: 'Primeira Consulta' // Valor padrão
             });
@@ -1003,31 +1122,31 @@
             const formatPhone = (value) => {
                 // Remove tudo que não é número
                 const numbers = value.replace(/\D/g, '');
-                
+
                 // Limita a 11 dígitos
                 const char = { 0: '(', 2: ') ', 7: '-' };
                 let phone = '';
-                
+
                 // Aplica a formatação (XX) XXXXX-XXXX
                 for (let i = 0; i < numbers.length; i++) {
                     phone += (char[i] || '') + numbers[i];
                 }
-                
+
                 return phone.slice(0, 15); // Limite de caracteres da máscara
             };
 
             const handleInputChange = (e) => {
                 const { name, value } = e.target;
                 if (name === 'phone') {
-                    setFormData(prev => ({...prev, [name]: formatPhone(value)}));
+                    setFormData(prev => ({ ...prev, [name]: formatPhone(value) }));
                 } else {
-                    setFormData(prev => ({...prev, [name]: value}));
+                    setFormData(prev => ({ ...prev, [name]: value }));
                 }
             };
 
             const handleSubmit = (e) => {
                 e.preventDefault();
-                
+
                 // Validação simples de telefone (mínimo 14 caracteres: (XX) XXXX-XXXX)
                 if (formData.phone.length < 14) {
                     alert("Por favor, digite um número de telefone válido com DDD.");
@@ -1036,16 +1155,16 @@
 
                 // Mensagem personalizada e profissional
                 const text = `Olá, gostaria de agendar com a *Dra. Gabriela Viotto Zanirato*.\n\n*Motivo:* ${formData.subject}\n*Me chamo:* ${formData.name}\n*Telefone:* ${formData.phone}\n\n${formData.message ? '*Mensagem:* ' + formData.message : ''}`;
-                
+
                 const encodedText = encodeURIComponent(text);
-                const whatsappUrl = `https://wa.me/551935822923?text=${encodedText}`; 
+                const whatsappUrl = `https://wa.me/551935822923?text=${encodedText}`;
                 window.open(whatsappUrl, '_blank');
             };
             const currentYear = new Date().getFullYear();
 
             // Adicionar estado para o modal de privacidade
             const [showPrivacy, setShowPrivacy] = useState(false);
-            
+
             // Opções de assunto para agilizar
             const subjects = ['Primeira Consulta', 'Retorno', 'Dúvidas'];
 
@@ -1065,7 +1184,7 @@
                                 <div className="space-y-8">
                                     <div className="flex items-start group">
                                         <div className="p-3 border border-primary/20 rounded-full mr-6 group-hover:border-accent transition-colors"><Icons.MapPin className="text-primary group-hover:text-accent" size={20} /></div>
-                                        <div><h4 className="font-serif text-2xl text-primary mb-1">CEDISAR</h4><p className="text-gray-700 font-normal text-base">Rua Ignácio Ribeiro, 580 - Centro<br/>Santa Rita do Passa Quatro - SP<br/>CEP: 13670-000</p></div>
+                                        <div><h4 className="font-serif text-2xl text-primary mb-1">CEDISAR</h4><p className="text-gray-700 font-normal text-base">Rua Ignácio Ribeiro, 580 - Centro<br />Santa Rita do Passa Quatro - SP<br />CEP: 13670-000</p></div>
                                     </div>
                                     <div className="flex items-start group">
                                         <div className="p-3 border border-primary/20 rounded-full mr-6 group-hover:border-accent transition-colors"><Icons.Phone className="text-primary group-hover:text-accent" size={20} /></div>
@@ -1077,13 +1196,13 @@
                                     </div>
                                 </div>
                                 <div className="w-full h-64 mt-10 rounded-lg overflow-hidden shadow-lg border border-gray-200 map-filter">
-                                    <iframe 
-                                        src="https://maps.google.com/maps?q=Rua+Ignácio+Ribeiro,+580+Centro+Santa+Rita+do+Passa+Quatro&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-                                        width="100%" 
-                                        height="100%" 
-                                        style={{border:0}} 
-                                        allowFullScreen="" 
-                                        loading="lazy" 
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=Rua+Ignácio+Ribeiro,+580+Centro+Santa+Rita+do+Passa+Quatro&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen=""
+                                        loading="lazy"
                                         referrerPolicy="no-referrer-when-downgrade"
                                     ></iframe>
                                 </div>
@@ -1098,19 +1217,19 @@
                                         <label className="text-xs uppercase tracking-widest text-primary/60 mb-2 block">Seu Nome</label>
                                         <input type="text" name="name" value={formData.name} onChange={handleInputChange} autoComplete="name" className="w-full bg-transparent border-b border-gray-300 py-3 focus:outline-none focus:border-accent transition-colors text-primary placeholder-gray-400 font-light text-base focus:border-b-2" placeholder="Digite seu nome completo" required />
                                     </div>
-                                    
+
                                     {/* Telefone com Máscara */}
                                     <div className="group">
                                         <label className="text-xs uppercase tracking-widest text-primary/60 mb-2 block">Seu WhatsApp</label>
-                                        <input 
-                                            type="tel" 
-                                            name="phone" 
-                                            value={formData.phone} 
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            value={formData.phone}
                                             onChange={handleInputChange}
                                             autoComplete="tel"
-                                            className="w-full bg-transparent border-b border-gray-300 py-3 focus:outline-none focus:border-accent transition-colors text-primary placeholder-gray-400 font-light text-base focus:border-b-2" 
-                                            placeholder="(DDD) 99999-9999" 
-                                            required 
+                                            className="w-full bg-transparent border-b border-gray-300 py-3 focus:outline-none focus:border-accent transition-colors text-primary placeholder-gray-400 font-light text-base focus:border-b-2"
+                                            placeholder="(DDD) 99999-9999"
+                                            required
                                         />
                                     </div>
 
@@ -1119,10 +1238,10 @@
                                         <label className="text-xs uppercase tracking-widest text-primary/60 mb-3 block">Motivo do contato</label>
                                         <div className="flex flex-wrap gap-2">
                                             {subjects.map(sub => (
-                                                <button 
+                                                <button
                                                     key={sub}
                                                     type="button"
-                                                    onClick={() => setFormData(prev => ({...prev, subject: sub}))}
+                                                    onClick={() => setFormData(prev => ({ ...prev, subject: sub }))}
                                                     className={`text-xs uppercase tracking-wider py-2 px-4 rounded-full border transition-all ${formData.subject === sub ? 'bg-primary text-white border-primary' : 'bg-transparent text-gray-500 border-gray-200 hover:border-accent hover:text-accent'}`}
                                                 >
                                                     {sub}
@@ -1136,10 +1255,10 @@
                                         <label className="text-xs uppercase tracking-widest text-primary/60 mb-2 block">Mensagem (Opcional)</label>
                                         <textarea name="message" value={formData.message} onChange={handleInputChange} rows="2" className="w-full bg-transparent border-b border-gray-300 py-3 focus:outline-none focus:border-accent transition-colors text-primary placeholder-gray-400 font-light text-base focus:border-b-2" placeholder="Alguma observação específica?"></textarea>
                                     </div>
-                                    
-                                    <button type="submit" className="w-full bg-primary text-white py-4 text-sm uppercase tracking-[0.2em] hover:bg-opacity-90 transition-all flex justify-center items-center group shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                                        <Icons.WhatsApp size={18} className="mr-3 text-white" />
-                                        AGENDAR NO WHATSAPP
+
+                                    <button type="submit" className="w-full flex justify-center items-center gap-2 bg-primary text-white py-4 text-sm uppercase tracking-widest hover:bg-opacity-90 transition-all group shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-full">
+                                        <Icons.WhatsApp size={20} className="text-white" />
+                                        <span>AGENDAR NO WHATSAPP</span>
                                     </button>
                                 </form>
                             </div>
@@ -1196,7 +1315,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     {/* Renderiza o modal se showPrivacy for verdadeiro */}
                     {showPrivacy && <PrivacyModal onClose={() => setShowPrivacy(false)} />}
                 </section>
@@ -1210,8 +1329,8 @@
                     <Icons.WhatsApp size={32} />
                     {/* Notificação "Fake" */}
                     <span className="absolute -top-1 -right-1 flex h-5 w-5">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-5 w-5 bg-red-500 text-white text-[10px] items-center justify-center font-bold">1</span>
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-5 w-5 bg-red-500 text-white text-[10px] items-center justify-center font-bold">1</span>
                     </span>
                 </a>
             </div>
@@ -1249,4 +1368,5 @@
         root.render(<App />);
     </script>
 </body>
+
 </html>
